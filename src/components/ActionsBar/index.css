@@ -1,0 +1,6 @@
+.toolbar {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

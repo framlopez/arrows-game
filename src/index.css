@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import "./styles/normalize.css";
+
+@import "./components/DownContainer3D/index.css";
+@import "./components/Aplication/index.css";
+@import "./components/ActionsBar/index.css";
+@import "./components/TitleCard/index.css";
+@import "./components/Game/index.css";
+
+#root {
+  background-color: rgba(0, 0, 100, 0.05);
+  font-family: 'Quantico', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
 }
