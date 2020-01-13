@@ -1,16 +1,12 @@
 import React, { PureComponent } from "react";
 import { initialState, Context } from "./context";
-import { Layout } from 'antd';
 import TitleCard from "../TitleCard";
 import ActionsBar from "../ActionsBar";
-import HeaderWrapper from "../HeaderWrapper";
 import Game from "../Game";
 import Onboarding from "../Onboarding";
 import ScoreModal from "../ScoreModal";
 import ScoreCards from "../ScoreCards";
 import cookie from 'react-cookies';
-
-const { Content, Footer } = Layout;
 
 export default class Aplication extends PureComponent {
   constructor(props) {
