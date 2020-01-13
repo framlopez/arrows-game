@@ -1,0 +1,8 @@
+.app-onboarding {
+
+}
+
+/* Override Antd Cancel Button Styles */
+.app-onboarding .ant-modal-footer .ant-btn:first-of-type {
+  display: none;
+}

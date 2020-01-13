@@ -1,0 +1,13 @@
+.app-time-clock {
+  position: relative;
+}
+
+.app-time-clock-mask {
+  background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}

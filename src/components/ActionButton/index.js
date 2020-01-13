@@ -1,13 +1,20 @@
 import React, { PureComponent } from "react";
-import UpContainer3D from "../UpContainer3D";
+import { Button, Icon } from 'antd';
 
 export default class ActionButton extends PureComponent {
   render() {
-    const { disabled, onClickHandler, text } = this.props;
+    const { type, disabled, size, onClickHandler, iconType, text } = this.props;
+    const buttonProps = {
+      type,
+      disabled,
+      size,
+      onClick: onClickHandler,
+    };
     return (
-      <UpContainer3D>
-        <button disabled={disabled} onClick={onClickHandler}>{text}</button>
-      </UpContainer3D>
+      <Button {...buttonProps}>
+        <Icon type={iconType} />
+        {text}
+      </Button>
     );
   }
 }

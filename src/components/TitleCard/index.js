@@ -1,12 +1,12 @@
 import React, { PureComponent } from "react";
-import DownContainer3D from "../DownContainer3D";
+import { Typography } from 'antd';
+
+const { Title } = Typography;
 
 export default class TitleCard extends PureComponent {
   render() {
     return (
-      <DownContainer3D>
-        <h1 className="app-title">Arrows</h1>
-      </DownContainer3D>
+      <Title className="app-title">Arrows Game</Title>
     );
   }
 }

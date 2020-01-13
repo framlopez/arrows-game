@@ -1,5 +1,7 @@
 import React, { PureComponent } from "react";
 import { Context } from "../Aplication/context";
+import { TimePicker } from 'antd';
+import moment from 'moment';
 
 export default class TimerClock extends PureComponent {
   static contextType = Context;
@@ -16,8 +18,9 @@ export default class TimerClock extends PureComponent {
     const { timer } = this.context;
 
     return (
-      <div>
-        {timer}
+      <div className="app-time-clock">
+        <TimePicker inputReadOnly={true} value={moment(timer, 'ss')} size="large" />
+        <div className="app-time-clock-mask" />
       </div>
     );
   }

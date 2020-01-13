@@ -1,9 +1,16 @@
 import React, { PureComponent } from "react";
 import { initialState, Context } from "./context";
+import { Layout } from 'antd';
 import TitleCard from "../TitleCard";
 import ActionsBar from "../ActionsBar";
+import HeaderWrapper from "../HeaderWrapper";
 import Game from "../Game";
-import ScoreCard from "../ScoreCard";
+import Onboarding from "../Onboarding";
+import ScoreModal from "../ScoreModal";
+import ScoreCards from "../ScoreCards";
+import cookie from 'react-cookies';
+
+const { Content, Footer } = Layout;
 
 export default class Aplication extends PureComponent {
   constructor(props) {
@@ -67,9 +74,15 @@ export default class Aplication extends PureComponent {
 
   resetTimer() {
     const { initialGameStatus, initialGameScore, initialGameTimer } = initialState;
-    this.stopTimer();
+    const { score } = this.state;
+
+    if (score.points > cookie.load('best_score') || !cookie.load('best_score')) {
+      cookie.save('best_score', score.points);
+    }
+
+    clearInterval(this.timer);
     this.setState({
-      gameStatus: initialGameStatus,
+      status: initialGameStatus,
       timer: initialGameTimer,
       score: initialGameScore,
       lastId: null,
@@ -110,6 +123,7 @@ export default class Aplication extends PureComponent {
   }
   
   render() {
+    const { status } = this.state;
     const contextValue = {
       ...this.state,
       resetTimer: this.resetTimer,
@@ -117,13 +131,16 @@ export default class Aplication extends PureComponent {
       stopTimer: this.stopTimer,
       updateScore: this.updateScore,
     };
+    
     return (
       <Context.Provider value={contextValue}>
         <div className="app-container">
           <TitleCard />
           <ActionsBar />
           <Game />
-          <ScoreCard />
+          <ScoreCards />
+          <Onboarding />
+          <ScoreModal visible={!status.run && !status.ready} />
         </div>
       </Context.Provider>
     );

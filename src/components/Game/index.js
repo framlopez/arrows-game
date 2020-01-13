@@ -122,7 +122,7 @@ export default class Game extends PureComponent {
     const defaultClassName = 'default';
     const actionClassName = keyDownSuccess ? 'success' : 'error';
     return (
-      <div>
+      <div className="app-game">
         {listItems.map((item, key) => {
           const className = (key === 0 && isKeyDown && status.run) ? actionClassName : defaultClassName;
           return <img className={className} src={item.icon} width="100" height="100" alt="" />;
