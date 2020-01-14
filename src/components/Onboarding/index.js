@@ -40,7 +40,7 @@ export default class Onboarding extends PureComponent {
     return (
       <Fragment>
         <p>Para comenzar a jugar, tentrás que utlizar el teclado.</p>
-        <img src="/arrows-keyboard-onboarding.png" alt="" width="100%" />
+        <img src="https://framlopez.github.io/arrows-game/arrows-keyboard-onboarding.png" alt="" width="100%" />
         <Checkbox checked={!showAgain} onChange={this.toggleShowAgainChecbox}>No volver a mostrar este mensaje</Checkbox>
       </Fragment>
     );
