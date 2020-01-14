@@ -7,14 +7,20 @@ import CardWrapper from "../CardWrapper";
 export default class Onboarding extends PureComponent {
   constructor(props) {
     super(props);
-    this.onCancelHandler = this.onCancelHandler.bind(this);
+    this.onResetGame = this.onResetGame.bind(this);
+    this.onShareGame = this.onShareGame.bind(this);
   }
   
   static contextType = Context;
 
-  onCancelHandler() {
+  onResetGame() {
     const { resetTimer } = this.context;
     resetTimer();
+  }
+
+  onShareGame() {
+    const { score } = this.context;
+    window.open(`https://twitter.com/intent/tweet?text=Este es mi último score: ${score.points}`);
   }
 
   get content() {
@@ -31,12 +37,13 @@ export default class Onboarding extends PureComponent {
     const { visible } = this.props;
     const modalProps = {
       title: 'Resultados',
-      okText: 'Continuar',
+      okText: 'Compartir',
+      cancelText: 'Volver a jugar',
       visible: visible,
       centered: true,
       closable: false,
-      onOk: this.onCancelHandler,
-      onCancel: this.onCancelHandler,
+      onOk: this.onShareGame,
+      onCancel: this.onResetGame,
     };
     return (
       <Modal {...modalProps}>

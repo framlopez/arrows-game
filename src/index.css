@@ -3,16 +3,18 @@
 @import "./styles/normalize.css";
 @import '~antd/dist/antd.css';
 
-@import "./components/Aplication/index.css";
-@import "./components/ActionsBar/index.css";
 @import "./components/TimerClock/index.css";
 @import "./components/Onboarding/index.css";
 @import "./components/ScoreCards/index.css";
-@import "./components/TitleCard/index.css";
-@import "./components/Game/index.css";
 
 
 #root {
   font-family: 'Quantico', sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  background-color: #fafafa;
+  align-content: flex-start;
+  padding: 32px 16px;
+  min-height: 100vh;
+  color: black;
+  display: grid;
+  width: 100%;
 }

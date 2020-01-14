@@ -1,12 +1,14 @@
 import React, { PureComponent } from "react";
+import cookie from 'react-cookies';
 import { initialState, Context } from "./context";
-import TitleCard from "../TitleCard";
+import PageTitle from "../PageTitle";
 import ActionsBar from "../ActionsBar";
 import Game from "../Game";
 import Onboarding from "../Onboarding";
 import ScoreModal from "../ScoreModal";
 import ScoreCards from "../ScoreCards";
-import cookie from 'react-cookies';
+
+import './index.css';
 
 export default class Aplication extends PureComponent {
   constructor(props) {
@@ -130,8 +132,8 @@ export default class Aplication extends PureComponent {
     
     return (
       <Context.Provider value={contextValue}>
-        <div className="app-container">
-          <TitleCard />
+        <div className="aplication">
+          <PageTitle />
           <ActionsBar />
           <Game />
           <ScoreCards />

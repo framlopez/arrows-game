@@ -1,15 +1,36 @@
-.app-game {
-  margin: 20px 0;
-}
-
-.default {
+.game {
+  border: 1px solid #d9d9d9;
   background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: grid;
+  padding: 8px;
+  width: 616px;
 }
 
-.success {
+.game__container {
+  transition: left 0.2s ease;
+  grid-auto-flow: column;
+  position: relative;
+  display: grid;
+}
+
+.arrow-key {
+  transition: background 0.2s ease;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  padding: 8px;
+}
+
+.arrow-key--success {
   background: green;
 }
 
-.error {
+.arrow-key--error {
   background: red;
+}
+
+.arrow-key--collapse {
+  width: 0;
 }

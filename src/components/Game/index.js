@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import { Context } from "../Aplication/context";
 
+import './index.css';
+
 export default class Game extends PureComponent {
   constructor(props) {
     super(props);
@@ -9,28 +11,26 @@ export default class Game extends PureComponent {
     this.errorProccess = this.errorProccess.bind(this);
     this.doneProccessKeyDown = this.doneProccessKeyDown.bind(this);
     this.errorProccessKeyDown = this.errorProccessKeyDown.bind(this);
-    
     this.successPoint = 1;
     this.errorPoint = -2;
     this.options = [
       {
         id: 'bottom',
-        icon: 'https://img.icons8.com/plasticine/100/000000/expand-arrow.png',
+        icon: '/down-arrow-key.png',
       },
       {
         id: 'top',
-        icon: 'https://img.icons8.com/plasticine/80/000000/collapse-arrow.png',
+        icon: '/up-arrow-key.png',
       },
       {
         id: 'left',
-        icon: 'https://img.icons8.com/plasticine/100/000000/left-squared.png',
+        icon: '/left-arrow-key.png',
       },
       {
         id: 'right',
-        icon: 'https://img.icons8.com/plasticine/100/000000/right-squared.png',
+        icon: '/right-arrow-key.png',
       }
     ];
-
     this.state = {
       listItems: [
         this.randomOption(),
@@ -48,8 +48,8 @@ export default class Game extends PureComponent {
 
   componentDidUpdate() {
     const { listItems } = this.state;
-    const { status, isKeyDown, lastId, startTimer } = this.context;
-    const firstItemId = listItems[0].id;
+    const { status, isKeyDown, lastId, startTimer, score } = this.context;
+    const firstItemId = listItems[score.successCount].id;
 
     if (lastId === null || !status.ready) return null;
     if (!status.run) startTimer();
@@ -75,9 +75,8 @@ export default class Game extends PureComponent {
   }
 
   doneProccess() {
-    const { updateScore, score } = this.context;
     const { listItems } = this.state;
-    listItems.shift();
+    const { updateScore, score } = this.context;
     this.setState({
       listItems: [
         ...listItems,
@@ -117,16 +116,18 @@ export default class Game extends PureComponent {
   }
   
   render() {
-    const { isKeyDown, status } = this.context;
     const { listItems, keyDownSuccess } = this.state;
-    const defaultClassName = 'default';
-    const actionClassName = keyDownSuccess ? 'success' : 'error';
+    const { isKeyDown, status, score } = this.context;
+    const defaultClassName = 'arrow-key';
+    const defaultStatusClassName = keyDownSuccess ? `${defaultClassName}--success` : `${defaultClassName}--error`;
     return (
-      <div className="app-game">
-        {listItems.map((item, key) => {
-          const className = (key === 0 && isKeyDown && status.run) ? actionClassName : defaultClassName;
-          return <img className={className} src={item.icon} width="100" height="100" alt="" />;
-        })}
+      <div className="game">
+        <div className="game__container" style={{ left: `${score.successCount * -100}px` }}>
+          {listItems.map((item, key) => {
+            const statusClassName = (key === score.successCount && isKeyDown && status.run) && defaultStatusClassName;
+            return <img className={`${defaultClassName} ${statusClassName}`} src={item.icon} alt="" />;
+          })}
+        </div>
       </div>
     );
   }

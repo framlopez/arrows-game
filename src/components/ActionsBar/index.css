@@ -1,12 +1,12 @@
-.app-toolbar {
-  display: grid;
-  grid-auto-flow: column;
+.actions-bar {
   justify-content: space-between;
+  grid-auto-flow: column;
+  display: grid;
 }
 
-.app-toolbar__left,
-.app-toolbar__right {
-  display: grid;
+.actions-bar__left,
+.actions-bar__right {
   grid-auto-flow: column;
   grid-column-gap: 16px;
+  display: grid;
 }
