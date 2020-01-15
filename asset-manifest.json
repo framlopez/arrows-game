@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/arrows-game/static/css/main.394f07b2.chunk.css",
-    "main.js": "/arrows-game/static/js/main.b6c1ed2d.chunk.js",
-    "main.js.map": "/arrows-game/static/js/main.b6c1ed2d.chunk.js.map",
+    "main.js": "/arrows-game/static/js/main.b75c95c9.chunk.js",
+    "main.js.map": "/arrows-game/static/js/main.b75c95c9.chunk.js.map",
     "runtime-main.js": "/arrows-game/static/js/runtime-main.54420f94.js",
     "runtime-main.js.map": "/arrows-game/static/js/runtime-main.54420f94.js.map",
     "static/css/2.35f98baf.chunk.css": "/arrows-game/static/css/2.35f98baf.chunk.css",
     "static/js/2.176c8eef.chunk.js": "/arrows-game/static/js/2.176c8eef.chunk.js",
     "static/js/2.176c8eef.chunk.js.map": "/arrows-game/static/js/2.176c8eef.chunk.js.map",
     "index.html": "/arrows-game/index.html",
-    "precache-manifest.c56ce8733907c305d732b74adc604464.js": "/arrows-game/precache-manifest.c56ce8733907c305d732b74adc604464.js",
+    "precache-manifest.707f891094e91461aca8cc791442a052.js": "/arrows-game/precache-manifest.707f891094e91461aca8cc791442a052.js",
     "service-worker.js": "/arrows-game/service-worker.js",
     "static/css/2.35f98baf.chunk.css.map": "/arrows-game/static/css/2.35f98baf.chunk.css.map",
     "static/css/main.394f07b2.chunk.css.map": "/arrows-game/static/css/main.394f07b2.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.35f98baf.chunk.css",
     "static/js/2.176c8eef.chunk.js",
     "static/css/main.394f07b2.chunk.css",
-    "static/js/main.b6c1ed2d.chunk.js"
+    "static/js/main.b75c95c9.chunk.js"
   ]
 }

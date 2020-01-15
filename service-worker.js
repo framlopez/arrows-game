@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/arrows-game/precache-manifest.c56ce8733907c305d732b74adc604464.js"
+  "/arrows-game/precache-manifest.707f891094e91461aca8cc791442a052.js"
 );
 
 self.addEventListener('message', (event) => {
