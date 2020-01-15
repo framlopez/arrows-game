@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from "react";
 import { Modal, Checkbox } from 'antd';
 import cookie from 'react-cookies';
+import onboardingPicture from './onboarding-picture.png';
 
 import './index.css';
 
@@ -42,7 +43,7 @@ export default class Onboarding extends PureComponent {
     return (
       <Fragment>
         <p>Para comenzar a jugar, tentrás que utlizar el teclado.</p>
-        <img className="onboarding__picture" src={`${process.env.PUBLIC_URL}/arrows-keyboard-onboarding.png`} alt="" width="100%" />
+        <img className="onboarding__picture" src={onboardingPicture} alt="" width="100%" />
         <Checkbox className="onboarding__checkbox" checked={!showAgain} onChange={this.toggleShowAgainChecbox}>No volver a mostrar este mensaje</Checkbox>
       </Fragment>
     );

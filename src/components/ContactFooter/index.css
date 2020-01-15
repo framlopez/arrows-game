@@ -26,33 +26,33 @@
 }
 
 .contact-footer__right__link-picture--instagram {
-  background-image: url(./instagram.png);
+  background-image: url("./instagram.png");
 }
 
 .contact-footer__right__link-picture--linkedin {
-  background-image: url(./linkedin.png);
+  background-image: url("./linkedin.png");
 }
 
 .contact-footer__right__link-picture--twitter {
-  background-image: url(./twitter.png);
+  background-image: url("./twitter.png");
 }
 
 .contact-footer__right__link-picture--github {
-  background-image: url(./github.png);
+  background-image: url("./github.png");
 }
 
 .contact-footer__right__link-picture--instagram:hover {
-  background-image: url(./instagram-color.png);
+  background-image: url("./instagram-color.png");
 }
 
 .contact-footer__right__link-picture--linkedin:hover {
-  background-image: url(./linkedin-color.png);
+  background-image: url("./linkedin-color.png");
 }
 
 .contact-footer__right__link-picture--twitter:hover {
-  background-image: url(./twitter-color.png);
+  background-image: url("./twitter-color.png");
 }
 
 .contact-footer__right__link-picture--github:hover {
-  background-image: url(./github-color.png);
+  background-image: url("./github-color.png");
 }

@@ -1,5 +1,9 @@
 import React, { PureComponent } from "react";
 import { Context } from "../Aplication/context";
+import DownKeyPicture from "./down-arrow-key.png";
+import UpKeyPicture from "./up-arrow-key.png";
+import LeftKeyPicture from "./left-arrow-key.png";
+import RightKeyPicture from "./right-arrow-key.png";
 
 import './index.css';
 
@@ -16,19 +20,19 @@ export default class Game extends PureComponent {
     this.options = [
       {
         id: 'bottom',
-        icon: `${process.env.PUBLIC_URL}/down-arrow-key.png`,
+        icon: DownKeyPicture,
       },
       {
         id: 'top',
-        icon: `${process.env.PUBLIC_URL}/up-arrow-key.png`,
+        icon: UpKeyPicture,
       },
       {
         id: 'left',
-        icon: `${process.env.PUBLIC_URL}/left-arrow-key.png`,
+        icon: LeftKeyPicture,
       },
       {
         id: 'right',
-        icon: `${process.env.PUBLIC_URL}/right-arrow-key.png`,
+        icon: RightKeyPicture,
       }
     ];
     this.state = {
