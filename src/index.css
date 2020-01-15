@@ -3,11 +3,6 @@
 @import "./styles/normalize.css";
 @import '~antd/dist/antd.css';
 
-@import "./components/TimerClock/index.css";
-@import "./components/Onboarding/index.css";
-@import "./components/ScoreCards/index.css";
-
-
 #root {
   font-family: 'Quantico', sans-serif;
   background-color: #fafafa;

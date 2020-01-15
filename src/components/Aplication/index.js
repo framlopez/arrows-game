@@ -7,6 +7,7 @@ import Game from "../Game";
 import Onboarding from "../Onboarding";
 import ScoreModal from "../ScoreModal";
 import ScoreCards from "../ScoreCards";
+import ContactFooter from "../ContactFooter";
 
 import './index.css';
 
@@ -139,6 +140,7 @@ export default class Aplication extends PureComponent {
           <ScoreCards />
           <Onboarding />
           <ScoreModal visible={!status.run && !status.ready} />
+          <ContactFooter />
         </div>
       </Context.Provider>
     );

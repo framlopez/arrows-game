@@ -1,10 +1,12 @@
-import React, { PureComponent, Fragment } from "react";
+import React, { PureComponent } from "react";
 import { Modal } from 'antd';
 import { Context } from "../Aplication/context";
 import ScoreTable from "../ScoreTable";
 import CardWrapper from "../CardWrapper";
 
-export default class Onboarding extends PureComponent {
+import './index.css';
+
+export default class ScoreModal extends PureComponent {
   constructor(props) {
     super(props);
     this.onResetGame = this.onResetGame.bind(this);
@@ -20,16 +22,32 @@ export default class Onboarding extends PureComponent {
 
   onShareGame() {
     const { score } = this.context;
-    window.open(`https://twitter.com/intent/tweet?text=Este es mi último score: ${score.points}`);
+    let shareURL = "http://twitter.com/share?";
+    var params = {
+      url: "https://framlopez.github.io/arrows-game/", 
+      text: `Mi nuevo score es: ${score.points} puntos`,
+      via: "framlopez_",
+      hashtags: "ArrowsGame,React"
+    };
+    for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
+    window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+  }
+
+  get pointsText() {
+    const { score } = this.context;
+
+    if (score.points === 1) {
+      return `${score.points} punto`;
+    }
+    return `${score.points} puntos`;
   }
 
   get content() {
-    const { score } = this.context;
     return (
-      <Fragment>
-        <CardWrapper title="Puntaje partida" iconType="caret-right" text={score.points} />
+      <div className="score-modal">
+        <CardWrapper text={this.pointsText} />
         <ScoreTable />
-      </Fragment>
+      </div>
     );
   }
   
@@ -41,7 +59,6 @@ export default class Onboarding extends PureComponent {
       cancelText: 'Volver a jugar',
       visible: visible,
       centered: true,
-      closable: false,
       onOk: this.onShareGame,
       onCancel: this.onResetGame,
     };

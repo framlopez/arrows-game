@@ -2,6 +2,8 @@ import React, { PureComponent, Fragment } from "react";
 import { Modal, Checkbox } from 'antd';
 import cookie from 'react-cookies';
 
+import './index.css';
+
 export default class Onboarding extends PureComponent {
   constructor(props) {
     super(props);
@@ -40,8 +42,8 @@ export default class Onboarding extends PureComponent {
     return (
       <Fragment>
         <p>Para comenzar a jugar, tentrás que utlizar el teclado.</p>
-        <img src="https://framlopez.github.io/arrows-game/arrows-keyboard-onboarding.png" alt="" width="100%" />
-        <Checkbox checked={!showAgain} onChange={this.toggleShowAgainChecbox}>No volver a mostrar este mensaje</Checkbox>
+        <img className="onboarding__picture" src={`${process.env.PUBLIC_URL}/arrows-keyboard-onboarding.png`} alt="" width="100%" />
+        <Checkbox className="onboarding__checkbox" checked={!showAgain} onChange={this.toggleShowAgainChecbox}>No volver a mostrar este mensaje</Checkbox>
       </Fragment>
     );
   }
@@ -49,7 +51,7 @@ export default class Onboarding extends PureComponent {
   render() {
     const { visible, setCookie } = this.state;
     const modalProps = {
-      className: 'app-onboarding',
+      className: 'onboarding',
       title: 'Bienvenid@ a arrow game',
       okText: 'Comenzar',
       visible: visible && !setCookie,

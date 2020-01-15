@@ -1,8 +1,8 @@
-.app-time-clock {
+.time-clock {
   position: relative;
 }
 
-.app-time-clock-mask {
+.time-clock__mask {
   background: transparent;
   position: absolute;
   height: 100%;

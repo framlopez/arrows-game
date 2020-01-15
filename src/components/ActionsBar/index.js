@@ -16,7 +16,6 @@ export default class ActionsBar extends PureComponent {
         </div>
         <div class="actions-bar__right">
           <ActionButton type="danger" disabled={!status.run && status.ready} size="large" onClickHandler={resetTimer} iconType="reload" text="Reiniciar" />
-          {/* <ActionButton type="default" size="large" onClickHandler={() => { console.log('share action'); }} iconType="share-alt" text="Compartir" /> */}
         </div>
       </div>
     );

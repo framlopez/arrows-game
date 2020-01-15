@@ -2,26 +2,28 @@ import React, { PureComponent } from "react";
 import { Table, Tag } from 'antd';
 import { Context } from "../Aplication/context";
 
+import './index.css';
+
 const columns = [
   {
     title: 'Motivo',
-    dataIndex: 'id1',
-    key: 'id1',
+    dataIndex: 'concept',
+    key: 'concept',
   },
   {
     title: 'Cantidad',
-    dataIndex: 'id2',
-    key: 'id2',
+    dataIndex: 'quantity',
+    key: 'quantity',
     align: 'right',
   },
   {
     title: 'Puntos',
-    dataIndex: 'id3',
-    key: 'id3',
+    dataIndex: 'points',
+    key: 'points',
+    align: 'right',
     render: (points) => {
       let color = 'geekblue';
       let symbol = ' ';
-      
       if (points < 0) {
         color = 'volcano';
         symbol = '';
@@ -31,7 +33,7 @@ const columns = [
       }
       return (
         <span>
-          <Tag color={color}>
+          <Tag className="tag" color={color}>
             {`${symbol}${points}`}
           </Tag>
         </span>
@@ -45,33 +47,21 @@ export default class ScoreTable extends PureComponent {
   render() {
     const { score } = this.context;
     const data = [
-      // {
-      //   key: '1',
-      //   name: 'Movimientos',
-      //   points: score.allCount,
-      //   tags: [],
-      // },
       {
         key: '1',
-        id1: 'Movimientos acertados',
-        id2: score.successCount,
-        id3: score.successCount * 1,
+        concept: 'Movimientos acertados',
+        quantity: score.successCount,
+        points: score.successCount * 1,
       },
       {
         key: '2',
-        id1: 'Movimientos fallidos',
-        id2: score.errorCount,
-        id3: score.errorCount * -2,
+        concept: 'Movimientos fallidos',
+        quantity: score.errorCount,
+        points: score.errorCount * -2,
       },
-      // {
-      //   key: '4',
-      //   name: 'Calificación',
-      //   points: score.points,
-      //   tags: [],
-      // },
     ];
     return (
-      <Table bordered columns={columns} dataSource={data} pagination={false} size="small" />
+      <Table bordered={true} columns={columns} dataSource={data} pagination={false} size="small" />
     );
   }
 }

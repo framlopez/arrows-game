@@ -16,19 +16,19 @@ export default class Game extends PureComponent {
     this.options = [
       {
         id: 'bottom',
-        icon: 'https://framlopez.github.io/arrows-game/down-arrow-key.png',
+        icon: `${process.env.PUBLIC_URL}/down-arrow-key.png`,
       },
       {
         id: 'top',
-        icon: 'https://framlopez.github.io/arrows-game/up-arrow-key.png',
+        icon: `${process.env.PUBLIC_URL}/up-arrow-key.png`,
       },
       {
         id: 'left',
-        icon: 'https://framlopez.github.io/arrows-game/left-arrow-key.png',
+        icon: `${process.env.PUBLIC_URL}/left-arrow-key.png`,
       },
       {
         id: 'right',
-        icon: 'https://framlopez.github.io/arrows-game/right-arrow-key.png',
+        icon: `${process.env.PUBLIC_URL}/right-arrow-key.png`,
       }
     ];
     this.state = {

@@ -1,8 +1,13 @@
-.app-onboarding {
-
+.onboarding .ant-modal-footer .ant-btn:first-of-type {
+  display: none;
 }
 
-/* Override Antd Cancel Button Styles */
-.app-onboarding .ant-modal-footer .ant-btn:first-of-type {
-  display: none;
+.onboarding__picture {
+  object-fit: contain;
+  height: 350px;
+}
+
+.onboarding__checkbox {
+  position: relative;
+  bottom: -60px;
 }

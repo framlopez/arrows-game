@@ -1,0 +1,4 @@
+.score-modal {
+  grid-row-gap: 16px;
+  display: grid;
+}

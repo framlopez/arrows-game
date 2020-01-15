@@ -1,0 +1,58 @@
+.contact-footer {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: 48px;
+  display: grid;
+}
+
+.contact-footer__left,
+.contact-footer__right {
+  grid-auto-flow: column;
+  grid-column-gap: 8px;
+  align-items: center;
+  display: grid;
+}
+
+.contact-footer__left__span {
+  color: grey;
+}
+
+.contact-footer__right__link-picture {
+  transition: background-image 0.2s ease;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+.contact-footer__right__link-picture--instagram {
+  background-image: url("/instagram.png");
+}
+
+.contact-footer__right__link-picture--linkedin {
+  background-image: url("/linkedin.png");
+}
+
+.contact-footer__right__link-picture--twitter {
+  background-image: url("/twitter.png");
+}
+
+.contact-footer__right__link-picture--github {
+  background-image: url("/github.png");
+}
+
+.contact-footer__right__link-picture--instagram:hover {
+  background-image: url("/instagram-color.png");
+}
+
+.contact-footer__right__link-picture--linkedin:hover {
+  background-image: url("/linkedin-color.png");
+}
+
+.contact-footer__right__link-picture--twitter:hover {
+  background-image: url("/twitter-color.png");
+}
+
+.contact-footer__right__link-picture--github:hover {
+  background-image: url("/github-color.png");
+}
