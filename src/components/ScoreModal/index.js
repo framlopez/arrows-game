@@ -24,10 +24,10 @@ export default class ScoreModal extends PureComponent {
     const { score } = this.context;
     let shareURL = "http://twitter.com/share?";
     var params = {
-      url: "https://framlopez.github.io/arrows-game/", 
+      url: "https://framlopez.github.io/arrows-game", 
       text: `Mi nuevo score es: ${score.points} puntos`,
       via: "framlopez_",
-      hashtags: "ArrowsGame,React"
+      hashtags: "React,Antd"
     };
     for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
     window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
