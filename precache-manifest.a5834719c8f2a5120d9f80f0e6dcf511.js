@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef955d67e546bbff718d42a45beee36c",
+    "revision": "7142f0a25c3d8abf78b8096b5321bf13",
     "url": "/arrows-game/index.html"
   },
   {
-    "revision": "4f0c9623fb3f583b7cdf",
+    "revision": "8b1ff73cbf0afe7e8083",
     "url": "/arrows-game/static/css/2.35f98baf.chunk.css"
   },
   {
-    "revision": "8e633f8426646b573a00",
-    "url": "/arrows-game/static/css/main.394f07b2.chunk.css"
+    "revision": "207d2142a9367461ec2f",
+    "url": "/arrows-game/static/css/main.077357eb.chunk.css"
   },
   {
-    "revision": "4f0c9623fb3f583b7cdf",
-    "url": "/arrows-game/static/js/2.176c8eef.chunk.js"
+    "revision": "8b1ff73cbf0afe7e8083",
+    "url": "/arrows-game/static/js/2.61ac9251.chunk.js"
   },
   {
     "revision": "5f8cf23863548b75359d029f3a6b7736",
-    "url": "/arrows-game/static/js/2.176c8eef.chunk.js.LICENSE"
+    "url": "/arrows-game/static/js/2.61ac9251.chunk.js.LICENSE"
   },
   {
-    "revision": "8e633f8426646b573a00",
-    "url": "/arrows-game/static/js/main.b75c95c9.chunk.js"
+    "revision": "207d2142a9367461ec2f",
+    "url": "/arrows-game/static/js/main.f49578f4.chunk.js"
   },
   {
     "revision": "6ca1c3cf98886285c697",

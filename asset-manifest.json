@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/arrows-game/static/css/main.394f07b2.chunk.css",
-    "main.js": "/arrows-game/static/js/main.b75c95c9.chunk.js",
-    "main.js.map": "/arrows-game/static/js/main.b75c95c9.chunk.js.map",
+    "main.css": "/arrows-game/static/css/main.077357eb.chunk.css",
+    "main.js": "/arrows-game/static/js/main.f49578f4.chunk.js",
+    "main.js.map": "/arrows-game/static/js/main.f49578f4.chunk.js.map",
     "runtime-main.js": "/arrows-game/static/js/runtime-main.54420f94.js",
     "runtime-main.js.map": "/arrows-game/static/js/runtime-main.54420f94.js.map",
     "static/css/2.35f98baf.chunk.css": "/arrows-game/static/css/2.35f98baf.chunk.css",
-    "static/js/2.176c8eef.chunk.js": "/arrows-game/static/js/2.176c8eef.chunk.js",
-    "static/js/2.176c8eef.chunk.js.map": "/arrows-game/static/js/2.176c8eef.chunk.js.map",
+    "static/js/2.61ac9251.chunk.js": "/arrows-game/static/js/2.61ac9251.chunk.js",
+    "static/js/2.61ac9251.chunk.js.map": "/arrows-game/static/js/2.61ac9251.chunk.js.map",
     "index.html": "/arrows-game/index.html",
-    "precache-manifest.707f891094e91461aca8cc791442a052.js": "/arrows-game/precache-manifest.707f891094e91461aca8cc791442a052.js",
+    "precache-manifest.a5834719c8f2a5120d9f80f0e6dcf511.js": "/arrows-game/precache-manifest.a5834719c8f2a5120d9f80f0e6dcf511.js",
     "service-worker.js": "/arrows-game/service-worker.js",
     "static/css/2.35f98baf.chunk.css.map": "/arrows-game/static/css/2.35f98baf.chunk.css.map",
-    "static/css/main.394f07b2.chunk.css.map": "/arrows-game/static/css/main.394f07b2.chunk.css.map",
-    "static/js/2.176c8eef.chunk.js.LICENSE": "/arrows-game/static/js/2.176c8eef.chunk.js.LICENSE",
+    "static/css/main.077357eb.chunk.css.map": "/arrows-game/static/css/main.077357eb.chunk.css.map",
+    "static/js/2.61ac9251.chunk.js.LICENSE": "/arrows-game/static/js/2.61ac9251.chunk.js.LICENSE",
     "static/media/down-arrow-key.png": "/arrows-game/static/media/down-arrow-key.37a7de4f.png",
     "static/media/left-arrow-key.png": "/arrows-game/static/media/left-arrow-key.fc5585f0.png",
     "static/media/onboarding-picture.png": "/arrows-game/static/media/onboarding-picture.00a0d4fa.png",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.54420f94.js",
     "static/css/2.35f98baf.chunk.css",
-    "static/js/2.176c8eef.chunk.js",
-    "static/css/main.394f07b2.chunk.css",
-    "static/js/main.b75c95c9.chunk.js"
+    "static/js/2.61ac9251.chunk.js",
+    "static/css/main.077357eb.chunk.css",
+    "static/js/main.f49578f4.chunk.js"
   ]
 }
