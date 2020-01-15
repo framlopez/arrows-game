@@ -25,28 +25,12 @@
   width: 50px;
 }
 
-.contact-footer__right__link-picture--instagram {
-  background-image: url("./instagram.png");
-}
-
-.contact-footer__right__link-picture--linkedin {
-  background-image: url("./linkedin.png");
-}
-
 .contact-footer__right__link-picture--twitter {
   background-image: url("./twitter.png");
 }
 
 .contact-footer__right__link-picture--github {
   background-image: url("./github.png");
-}
-
-.contact-footer__right__link-picture--instagram:hover {
-  background-image: url("./instagram-color.png");
-}
-
-.contact-footer__right__link-picture--linkedin:hover {
-  background-image: url("./linkedin-color.png");
 }
 
 .contact-footer__right__link-picture--twitter:hover {

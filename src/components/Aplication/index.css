@@ -2,6 +2,7 @@
   align-content: flex-start;
   justify-content: center;
   grid-row-gap: 16px;
+  max-width: 616px;
   display: grid;
   width: 100%;
 }
